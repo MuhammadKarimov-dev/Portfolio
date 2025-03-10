@@ -1,0 +1,37 @@
+name: Auto Push
+
+on:
+  schedule:
+    - cron: '0 9,14,20 * * *' 
+
+jobs:
+  auto-push:
+    runs-on: ubuntu-latest 
+
+    steps:
+      
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+     
+      - name: Yangi o'zgarish kiritish
+        run: |
+          echo "Yangi o'zgarish: $(date)" >> log.txt
+
+      - name: Git konfiguratsiyasi
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+
+      - name: Commit qilish
+        run: |
+          git add .
+          git commit -m "Avtomatik commit: $(date)"
+
+  
+      - name: Push qilish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+        run: |
+          git push origin main
