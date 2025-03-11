@@ -1,7 +1,7 @@
 name: Auto Push
 on:
   schedule:
-    - cron: '0 9,14,20 * * *' 
+    - cron: '0 1,9,14,20 * * *' 
 jobs:
   auto-push:
     runs-on: ubuntu-latest 
