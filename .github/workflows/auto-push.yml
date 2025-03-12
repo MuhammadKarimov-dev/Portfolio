@@ -1,30 +1,34 @@
 name: Auto Push
 on:
   schedule:
-    - cron: '0 1,9,14,20 * * *' 
+    - cron: '0 1,9,14,20 * * *'  # Har kuni 01:00, 09:00, 14:00 va 20:00 da ishlaydi
+
 jobs:
   auto-push:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Yangi o'zgarish kiritish
         run: |
           echo "Yangi o'zgarish: $(date)" >> log.txt
-          
+
       - name: Git konfiguratsiyasi
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
+
       - name: Commit qilish
         run: |
           git add .
           git commit -m "Avtomatik commit: $(date)" || echo "No changes to commit"
-  
+
       - name: Push qilish
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/MuhammadKarimov-dev/Portfolio.git
           git push origin main
