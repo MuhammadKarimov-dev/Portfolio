@@ -38,12 +38,10 @@ export default function Home() {
     { name: "Node.js", icon: "nodejs", url: "https://nodejs.org/" },
     { name: "Python", icon: "python", url: "https://www.python.org/" },
     { name: "Django", icon: "django", url: "https://www.djangoproject.com/" },
-    { name: "MongoDB", icon: "mongodb", url: "https://www.mongodb.com/" },
-    { name: "GraphQL", icon: "graphql", url: "https://graphql.org/" },
+
     { name: "Docker", icon: "docker", url: "https://www.docker.com/" },
     { name: "AWS", icon: "aws", url: "https://aws.amazon.com/" },
     { name: "Google Cloud", icon: "gcp", url: "https://cloud.google.com/" },
-    { name: "Azure", icon: "azure", url: "https://azure.microsoft.com/" },
     { name: "Nginx", icon: "nginx", url: "https://www.nginx.com/" },
     { name: "Firebase", icon: "firebase", url: "https://firebase.google.com/" },
   ]
@@ -58,53 +56,44 @@ export default function Home() {
     { name: "Figma", icon: "figma", url: "https://www.figma.com/" },
     { name: "Photoshop", icon: "photoshop", url: "https://www.adobe.com/products/photoshop.html" },
     { name: "Notion", icon: "notion", url: "https://www.notion.so/" },
-    { name: "Webpack", icon: "webpack", url: "https://webpack.js.org/" },
-    { name: "Babel", icon: "babel", url: "https://babeljs.io/" },
-    { name: "Kubernetes", icon: "kubernetes", url: "https://kubernetes.io/" },
+    { name: "Vite", icon: "vite", url: "https://vitejs.dev/" },
+
+
   ]
 
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "A full-featured online store with payment integration, user authentication, and product management",
+      title: "UzMovie Clone",
+      description: "ReactJS yordamida yaratilgan UzMovie.tv saytining clone versiyasi. Filmlar katalogi, kategoriyalar bo'yicha saralash, qidiruv funksiyasi va batafsil ma'lumotlar sahifasiga ega. Responsive dizayn barcha qurilmalarda yaxshi ishlaydi.",
+      image: "https://images.bauerhosting.com/empire/2022/01/Greatest-Movies.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80",
+      tech: ["React", "CSS", "React Router DOM", "React Icons"],
+      demoLink: "https://uzmovie-delta.vercel.app/",
+      codeLink: "https://github.com/MuhammadKarimov-dev/Uzmovie-Clone",
+    },
+    {
+      title: "Kutubxona Sayt",
+      description: "Elektron kutubxona tizimi. Kitoblarni qidiruv, filtrlash, saqlash va kategoriyalar bo'yicha ko'rish imkoniyatiga ega.",
       image: "/placeholder.svg?height=300&width=500",
-      tech: ["React", "Node.js", "MongoDB", "Express.js", "Redux"],
+      tech: ["React", "Tailwind CSS", "Firebase", "React Router"],
       demoLink: "#",
       codeLink: "https://github.com/MuhammadKarimov-dev",
     },
     {
-      title: "Task Management App",
-      description:
-        "A responsive task management application with drag-and-drop functionality and team collaboration features",
-      image: "/placeholder.svg?height=300&width=500",
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
-      demoLink: "#",
-      codeLink: "https://github.com/MuhammadKarimov-dev",
-    },
-    {
-      title: "Educational Platform",
-      description: "An interactive learning platform with video courses, quizzes, and progress tracking",
+      title: "Ta'lim Platformasi",
+      description: "Video kurslar, viktorinalar va progress kuzatuvi bilan interaktiv o'quv platformasi",
       image: "/placeholder.svg?height=300&width=500",
       tech: ["React", "Django", "PostgreSQL", "AWS"],
       demoLink: "#",
       codeLink: "https://github.com/MuhammadKarimov-dev",
     },
     {
-      title: "Personal Blog",
-      description: "A modern blog platform with markdown support, categories, and search functionality",
+      title: "Shaxsiy Blog",
+      description: "Markdown qo'llab-quvvatlash, kategoriyalar va qidiruv funksiyasi bilan zamonaviy blog platformasi",
       image: "/placeholder.svg?height=300&width=500",
       tech: ["Next.js", "MDX", "Tailwind CSS", "Vercel"],
       demoLink: "#",
       codeLink: "https://github.com/MuhammadKarimov-dev",
-    },
-    {
-      title: "Weather App",
-      description: "A weather application with location detection, forecasts, and interactive maps",
-      image: "/placeholder.svg?height=300&width=500",
-      tech: ["React", "OpenWeather API", "Leaflet", "Styled Components"],
-      demoLink: "#",
-      codeLink: "https://github.com/MuhammadKarimov-dev",
-    },
+    }
   ]
 
   return (
@@ -130,10 +119,10 @@ export default function Home() {
           className="max-w-3xl mx-auto"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Hi, I'm <span className="text-primary">Muhammad Karimov</span>
+            Salom, men <span className="text-primary">Muhammad Karimov</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-muted-foreground">
-            Frontend Developer | IT Educator | Tech Enthusiast
+            Frontend Dasturchi | IT Ta'limchi | Texnologiya Ishqibozi
           </p>
           <div className="flex justify-center gap-4 mb-8">
             <SocialIcon href="https://www.linkedin.com/in/muhammad-karimovdev/" icon={<Linkedin />} label="LinkedIn" />
@@ -145,15 +134,15 @@ export default function Home() {
           {/* Resume Download Button */}
           <div className="mb-8">
             <Button variant="default" size="lg" className="group animate-pulse hover:animate-none" asChild>
-              <a href="/resume/muhammad-karimov-resume.pdf" download>
+              <a href="https://f005.backblazeb2.com/file/seezntv/test/Muhim/Muhammad_Karimov_Resume.pdf" download target="_blank" rel="noopener noreferrer">
                 <FileDown className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-                Download Resume
+                Rezumeni Yuklab Olish
               </a>
             </Button>
           </div>
 
           <Button onClick={scrollToAbout} size="lg" className="group">
-            View My Work
+            Mening Ishlarim
             <ArrowDown className="ml-2 h-4 w-4 group-hover:animate-bounce" />
           </Button>
         </motion.div>
@@ -168,28 +157,24 @@ export default function Home() {
           viewport={{ once: true, margin: "-100px" }}
           className="max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Men Haqimda</h2>
           <div className="space-y-4">
             <p className="text-lg">
-              I'm a passionate Frontend Developer and IT Educator based in Andijon, Uzbekistan. I specialize in creating
-              clean, responsive, and user-friendly web applications that deliver exceptional user experiences.
+              Men O'zbekistonning Andijon viloyatida yashovchi ishtiyoqli Frontend Dasturchi va IT Ta'limchiman. Men foydalanuvchilarga ajoyib tajriba taqdim etuvchi toza, responsive va qulay veb-ilovalarni yaratishga ixtisoslashganman.
             </p>
             <p className="text-lg">
-              With expertise in modern frontend technologies like React, Next.js, and TypeScript, I build scalable and
-              maintainable web applications. I'm also passionate about sharing my knowledge and mentoring others in the
-              tech community.
+              React, Next.js va TypeScript kabi zamonaviy frontend texnologiyalarida tajribam bilan, men kengaytiriladigan va qo'llab-quvvatlanadigan veb-ilovalarni yarataman. Men shuningdek, o'z bilimlarimni ulashish va texnologiya hamjamiyatida boshqalarga maslahat berishga ishtiyoqmandman.
             </p>
             <p className="text-lg">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or
-              enjoying anime. I'm a lifelong learner always looking to expand my skills and knowledge.
+              Kod yozishdan tashqari vaqtimda, siz meni yangi texnologiyalarni o'rganayotgan, ochiq-manbali loyihalarga hissa qo'shayotgan yoki anime tomosha qilayotganimni ko'rishingiz mumkin. Men o'z ko'nikmalarim va bilimlarimni kengaytirishga intiluvchi umr bo'yi o'rganuvchiman.
             </p>
 
             {/* Resume Link in About Section */}
             <div className="pt-4 flex justify-center">
               <Button variant="outline" size="lg" className="group" asChild>
-                <a href="/resume/muhammad-karimov-resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="https://f005.backblazeb2.com/file/seezntv/test/Muhim/Muhammad_Karimov_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <FileText className="mr-2 h-5 w-5" />
-                  View Full Resume
+                  To'liq Rezumeni Ko'rish
                 </a>
               </Button>
             </div>
@@ -207,7 +192,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
             className="text-3xl font-bold mb-12 text-center"
           >
-            Skills & Technologies
+            Ko'nikmalar va Texnologiyalar
           </motion.h2>
 
           {/* Frontend Skills */}
@@ -219,7 +204,7 @@ export default function Home() {
               viewport={{ once: true, margin: "-100px" }}
               className="text-xl font-semibold mb-6 text-primary"
             >
-              Frontend Development
+              Frontend Dasturlash
             </motion.h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {frontendSkills.map((skill, index) => (
@@ -237,7 +222,7 @@ export default function Home() {
               viewport={{ once: true, margin: "-100px" }}
               className="text-xl font-semibold mb-6 text-primary"
             >
-              Backend & DevOps
+              Backend va DevOps
             </motion.h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {backendSkills.map((skill, index) => (
@@ -255,7 +240,7 @@ export default function Home() {
               viewport={{ once: true, margin: "-100px" }}
               className="text-xl font-semibold mb-6 text-primary"
             >
-              Tools & Others
+              Vositalar va Boshqalar
             </motion.h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
               {toolsSkills.map((skill, index) => (
@@ -276,7 +261,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
             className="text-3xl font-bold mb-12 text-center"
           >
-            Projects
+            Loyihalar
           </motion.h2>
 
           <ProjectCarousel projects={projects} />
@@ -292,9 +277,9 @@ export default function Home() {
           viewport={{ once: true, margin: "-100px" }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
+          <h2 className="text-3xl font-bold mb-8">Bog'lanish</h2>
           <p className="text-lg mb-8 text-muted-foreground">
-            Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+            Agar dasturchi qidirayotgan bo'lsangiz, savolingiz bo'lsa yoki shunchaki bog'lanmoqchi bo'lsangiz, men bilan bog'lanishingiz mumkin.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button
@@ -358,7 +343,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-6 px-6 text-center text-sm text-muted-foreground border-t">
-        <p>© {new Date().getFullYear()} Muhammad Karimov. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Muhammad Karimov. Barcha huquqlar himoyalangan.</p>
       </footer>
     </main>
   )
