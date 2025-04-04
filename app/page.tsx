@@ -63,6 +63,22 @@ export default function Home() {
 
   const projects = [
     {
+      title: "ZaminCloud",
+      description: "HDD, SSD va cloud xizmatlarini taqdim etuvchi onlayn do'kon. Ma'lumotlarni xavfsiz saqlash va bulutli texnologiyalar platformasi.",
+      image: "https://zamin-cloud.vercel.app/images/zamincloud-hero.jpg",
+      tech: ["Next.js", "Tailwind CSS", "Vercel", "React"],
+      demoLink: "https://zamin-cloud.vercel.app/",
+      codeLink: "https://github.com/MuhammadKarimov-dev",
+    },
+    {
+      title: "OnTaksi",
+      description: "Telegram xizmatini avtomatlashtirgan taksi buyurtma tizimi. Foydalanuvchilarning qulay buyurtma berishlari uchun yaratilgan.",
+      image: "/placeholder.svg?height=300&width=500",
+      tech: ["Telegram API", "Node.js", "Express", "MongoDB"],
+      demoLink: "http://ontaksi.uz/login/?next=/",
+      codeLink: "https://github.com/MuhammadKarimov-dev",
+    },
+    {
       title: "UzMovie Clone",
       description: "ReactJS yordamida yaratilgan UzMovie.tv saytining clone versiyasi. Filmlar katalogi, kategoriyalar bo'yicha saralash, qidiruv funksiyasi va batafsil ma'lumotlar sahifasiga ega. Responsive dizayn barcha qurilmalarda yaxshi ishlaydi.",
       image: "https://images.bauerhosting.com/empire/2022/01/Greatest-Movies.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80",
@@ -71,12 +87,12 @@ export default function Home() {
       codeLink: "https://github.com/MuhammadKarimov-dev/Uzmovie-Clone",
     },
     {
-      title: "Kutubxona Sayt",
-      description: "Elektron kutubxona tizimi. Kitoblarni qidiruv, filtrlash, saqlash va kategoriyalar bo'yicha ko'rish imkoniyatiga ega.",
+      title: "Nur - Raqamli Kutubxona",
+      description: "Zamonaviy raqamli kutubxona platformasi. Kitoblarni o'qish, qidirish va janrlar bo'yicha ko'rish imkoniyatiga ega.",
       image: "/placeholder.svg?height=300&width=500",
       tech: ["React", "Tailwind CSS", "Firebase", "React Router"],
-      demoLink: "#",
-      codeLink: "https://github.com/MuhammadKarimov-dev",
+      demoLink: "https://online-book-gilt.vercel.app/",
+      codeLink: "https://github.com/MuhammadKarimov-dev/Online-book-",
     },
     {
       title: "Ta'lim Platformasi",
