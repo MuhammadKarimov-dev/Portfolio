@@ -65,7 +65,7 @@ export default function Home() {
     {
       title: "ZaminCloud",
       description: "HDD, SSD va cloud xizmatlarini taqdim etuvchi onlayn do'kon. Ma'lumotlarni xavfsiz saqlash va bulutli texnologiyalar platformasi.",
-      image: "https://zamin-cloud.vercel.app/images/zamincloud-hero.jpg",
+      image: "https://i.pcmag.com/imagery/roundups/03yy022DDsenwhBBYdxvwDi-3..v1593631883.jpg",
       tech: ["Next.js", "Tailwind CSS", "Vercel", "React"],
       demoLink: "https://zamin-cloud.vercel.app/",
       codeLink: "https://github.com/MuhammadKarimov-dev",
@@ -73,7 +73,7 @@ export default function Home() {
     {
       title: "OnTaksi",
       description: "Telegram xizmatini avtomatlashtirgan taksi buyurtma tizimi. Foydalanuvchilarning qulay buyurtma berishlari uchun yaratilgan.",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://yuz.uz/imageproxy/1200x/https://yuz.uz/file/news/e54aca0b66aedbd77b8fd0cc0b6e6865.jpg",
       tech: ["Telegram API", "Node.js", "Express", "MongoDB"],
       demoLink: "http://ontaksi.uz/login/?next=/",
       codeLink: "https://github.com/MuhammadKarimov-dev",
@@ -89,7 +89,7 @@ export default function Home() {
     {
       title: "Nur - Raqamli Kutubxona",
       description: "Zamonaviy raqamli kutubxona platformasi. Kitoblarni o'qish, qidirish va janrlar bo'yicha ko'rish imkoniyatiga ega.",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://media.npr.org/assets/artslife/books/2010/01/ipad-books-a81541c5cf8acb77f2da26403be40d95a0a2ac0a.jpg?s=1100&c=50&f=jpeg",
       tech: ["React", "Tailwind CSS", "Firebase", "React Router"],
       demoLink: "https://online-book-gilt.vercel.app/",
       codeLink: "https://github.com/MuhammadKarimov-dev/Online-book-",
@@ -97,7 +97,7 @@ export default function Home() {
     {
       title: "Ta'lim Platformasi",
       description: "Video kurslar, viktorinalar va progress kuzatuvi bilan interaktiv o'quv platformasi",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://infocom.uz/_next/image?url=https%3A%2F%2Fapi.infocom.uz%2Fstorage%2Fimages%2Fposts%2Fnormal%2FIO0BVKzhYvtnVVIXhYLP1JImrFmYEQFZECdX5w0A.jpg&w=3840&q=75",
       tech: ["React", "Django", "PostgreSQL", "AWS"],
       demoLink: "#",
       codeLink: "https://github.com/MuhammadKarimov-dev",
@@ -105,7 +105,7 @@ export default function Home() {
     {
       title: "Shaxsiy Blog",
       description: "Markdown qo'llab-quvvatlash, kategoriyalar va qidiruv funksiyasi bilan zamonaviy blog platformasi",
-      image: "/placeholder.svg?height=300&width=500",
+      image: "https://ahkr.b-cdn.net/wp-content/uploads/2024/02/personal-blogging-featured.jpg",
       tech: ["Next.js", "MDX", "Tailwind CSS", "Vercel"],
       demoLink: "#",
       codeLink: "https://github.com/MuhammadKarimov-dev",
@@ -277,7 +277,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
             className="text-3xl font-bold mb-12 text-center"
           >
-            Loyihalar
+            Sara Loyihalar
           </motion.h2>
 
           <ProjectCarousel projects={projects} />
@@ -337,7 +337,7 @@ export default function Home() {
               asChild
               className="hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
             >
-              <a href="https://t.me/MuhammadKarimovDev" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/mkarimovdev" target="_blank" rel="noopener noreferrer">
                 <Mail className="mr-2 h-5 w-5" />
                 Telegram
               </a>
